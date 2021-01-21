@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>it.github.job.model</OriginalElement>
+  <nodes>
+    <node x="583.9242424242425" y="0.0">it.github.job.model.JobResult</node>
+    <node x="606.0" y="331.0">it.github.job.model.CountryPosition</node>
+    <node x="231.75" y="44.0">it.github.job.model.JobSearchFilter</node>
+    <node x="413.5" y="1001.0">it.github.job.view.App</node>
+    <node x="241.0" y="638.0">it.github.job.service.JobService</node>
+    <node x="281.0" y="343.0">it.github.job.controller.GitHubJobClient</node>
+    <node x="0.0" y="321.0">it.github.job.controller.ConfigurationReader</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="it.github.job.service.JobService" target="it.github.job.model.CountryPosition">
+      <point x="168.0" y="-156.5" />
+      <point x="601.0" y="618.0" />
+      <point x="709.0" y="618.0" />
+      <point x="0.0" y="113.5" />
+    </edge>
+    <edge source="it.github.job.service.JobService" target="it.github.job.controller.GitHubJobClient">
+      <point x="24.0" y="-156.5" />
+      <point x="457.0" y="588.0" />
+      <point x="509.0" y="588.0" />
+      <point x="76.0" y="101.5" />
+    </edge>
+    <edge source="it.github.job.service.JobService" target="it.github.job.model.JobSearchFilter">
+      <point x="-120.0" y="-156.5" />
+      <point x="313.0" y="608.0" />
+      <point x="259.5" y="608.0" />
+      <point x="259.5" y="301.0" />
+      <point x="257.25" y="301.0" />
+      <point x="-51.0" y="91.5" />
+    </edge>
+    <edge source="it.github.job.view.App" target="it.github.job.service.JobService">
+      <point x="0.0" y="-124.5" />
+      <point x="96.0" y="156.5" />
+    </edge>
+    <edge source="it.github.job.controller.GitHubJobClient" target="it.github.job.model.JobResult">
+      <point x="76.0" y="-101.5" />
+      <point x="509.0" y="291.0" />
+      <point x="600.9242424242425" y="291.0" />
+      <point x="-51.0" y="135.5" />
+    </edge>
+    <edge source="it.github.job.service.JobService" target="it.github.job.controller.ConfigurationReader">
+      <point x="-168.0" y="-156.5" />
+      <point x="265.0" y="618.0" />
+      <point x="124.5" y="618.0" />
+      <point x="0.0" y="123.5" />
+    </edge>
+    <edge source="it.github.job.view.App" target="it.github.job.model.CountryPosition">
+      <point x="76.99999999999999" y="-124.5" />
+      <point x="606.0" y="976.0" />
+      <point x="744.409090909091" y="976.0" />
+      <point x="744.409090909091" y="618.0" />
+      <point x="777.6666666666667" y="618.0" />
+      <point x="68.66666666666674" y="113.5" />
+    </edge>
+    <edge source="it.github.job.controller.GitHubJobClient" target="it.github.job.model.JobSearchFilter">
+      <point x="-76.0" y="-101.5" />
+      <point x="357.0" y="301.0" />
+      <point x="359.25" y="301.0" />
+      <point x="51.0" y="91.5" />
+    </edge>
+    <edge source="it.github.job.model.CountryPosition" target="it.github.job.model.JobResult">
+      <point x="51.5" y="-113.5" />
+      <point x="760.5" y="301.0" />
+      <point x="702.9242424242425" y="301.0" />
+      <point x="51.0" y="135.5" />
+    </edge>
+    <edge source="it.github.job.service.JobService" target="it.github.job.model.JobResult">
+      <point x="72.0" y="-156.5" />
+      <point x="505.0" y="598.0" />
+      <point x="595.5" y="598.0" />
+      <point x="595.5" y="301.0" />
+      <point x="634.9242424242425" y="301.0" />
+      <point x="-17.0" y="135.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="245.54761904761904" y="682.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
