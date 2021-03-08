@@ -1,4 +1,4 @@
-# <div align="center"> Progetto-Chalet </div>
+# <div align="center"> RISTORANTE </div>
 
 > "Ristorante" è un programma che si occupa della gestione di un ristorante volta alla prenotazione da parte di clienti. Dopo aver creato un account, il cliente ha la possibilità di prenotare il tavolo all'aperto o al chiuso in base alle conduzioni meteorologiche della giornata, e scegliere cosa mangiare nel menù proposto dal ristorante. Ovviamente il cliente può consultare le condizioni metereologiche del giorno in cui desidera prenotare il tavolo. 
 > Il software utilizzato per la realizzazione del programma è [Postman](https://www.postman.com/) che permette di effettuare le varie operazioni precedentemente dette tramite la porta "localhost:8080". Di seguito elenchiamo le rotte che devono essere inserite dopo la porta, per eseguire le varie chiamate.
