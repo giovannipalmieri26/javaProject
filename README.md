@@ -19,6 +19,7 @@ GET|/visualizzaTavoli| |Visualizza la lista dei tavoli prenotati
 ***
 - ## Diagramma dei casi d'uso    
 - ## Diagramma delle classi
+***
   
     Package|Classi
     -------|------
