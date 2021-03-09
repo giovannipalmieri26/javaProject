@@ -17,15 +17,8 @@ POST|/ristorante|"posto" <br> "nome"|Mostra tutte le informazioni relative al ri
 GET|/visualizzaTavoli| |Visualizza la lista dei tavoli prenotati
 
 ***
-- ## Diagramma dei casi d'uso
-  > Diagramma dei casi d'uso utilizzati per la modellazione del progetto
-  
-  <div align="center"><img src="https://raw.githubusercontent.com/Luca-Marcianesi/Progetto-chalet/master/img/Cliente.jpg" width="500" height="500" ></div>
-    
+- ## Diagramma dei casi d'uso    
 - ## Diagramma delle classi
-  > Diagramma delle classi utilizzate per l'impostazione del progetto 
-  
-    <div align="center"><img src="https://raw.githubusercontent.com/Luca-Marcianesi/Progetto-chalet/master/img/Uso%20delle%20classi%20Class%20Diagram.jpg" width="600" height="400" ></div>
   
     Package|Classi
     -------|------
@@ -40,23 +33,8 @@ GET|/visualizzaTavoli| |Visualizza la lista dei tavoli prenotati
     ristorante|Piatto; Ristorante; Statistiche; Tavolo;
   
 - ## Diagramma delle sequenze
-  > Diagramma delle sequenze che descrive il funzionamento delle chiamate web utilizzate mediante Postman
-  <div align="center"><img src="https://raw.githubusercontent.com/Luca-Marcianesi/Progetto-chalet/master/img/Diagramma%20delle%20sequenze%20Cliente.jpg" width="600" height="400" ></div>
-
 ***
-## Eccezioni
-* #### Eccezione posto
-
-    Se viene immesso un posto minore di 1
-  
-* #### Eccezione prezzo
-
-   Se viene immesso un prezzo negativo
-  
-* #### Eccezione spiaggia
-
-   Se viene richiesta la prenotazione di un ombrellone in assenza di una spiaggia
-  
+## Eccezioni 
 ***
 ## TEST
 + Sui Login
