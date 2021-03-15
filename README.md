@@ -26,8 +26,9 @@ POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha e
     api|UtilizzoApi;
     controller|SimpleRestController;
     interfacce|Oggetto;
-    it.univpm.demo|DemoApplication;
-    liste|Lista; ListaTavoli;
+    demo|DemoApplication;
+    eccezioni|EccezioneData; EccezioneMenu;
+    liste|Lista; ListaPrenotazione;
     luogo|Previsioni; 
     prenotazioni|Prenotazioni;
     registrazione|Account; Database;
@@ -35,7 +36,11 @@ POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha e
   
 - ## Diagramma delle sequenze
 ***
-## Eccezioni 
+## Eccezioni
++ EccezioneData
+  + Eccezione che gestisce l'inserimento errato di date
++ EccezioneMenu
+  + Eccezione che gestisce l'inserimento di cibi non presenti nel Menù
 ***
 ## TEST
 + Sui Login
