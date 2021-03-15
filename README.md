@@ -11,11 +11,12 @@ POST|/creaAccount|"user" <br> "pass"|Crea un account inserendo username e passwo
 POST|/login|"user" <br> "pass"|Accedi al tuo account inserendo username e password
 GET|/logout| |Disconnette il proprio account
 GET|/listaAccount| |Genera la lista di account presenti nel database 
+GET|/listaPrenotazioni| |Genera la lista di prenotazioni presenti nel database
 GET|/previsioni| |Visualizza le condizioni metereologiche
-POST|/prenota|"antipasto" <br> "primo" <br> "secondo" <br> "dolce"|Permette all'utente di prenotare
+POST|/prenotaTavolo|"anno" <br> "mese" <br> "giorno"|Permette all'utente di prenotare il tavolo
+POST|/prenotaMenu|"antipasto" <br> "primo" <br> "secondo" <br> "dolce"|Permette all'utente di prenotare il Menù
 POST|/ristorante|"posto" <br> "nome"|Mostra tutte le informazioni relative al ristorante
-GET|/visualizzaTavoli| |Visualizza la lista dei tavoli prenotati
-
+POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha effettuato
 ***
 - ## Diagramma dei casi d'uso    
 - ## Diagramma delle classi
