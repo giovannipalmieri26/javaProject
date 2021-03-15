@@ -15,7 +15,7 @@ GET|/listaPrenotazioni| |Genera la lista di prenotazioni presenti nel database
 GET|/previsioni| |Visualizza le condizioni metereologiche
 POST|/prenotaTavolo|"anno" <br> "mese" <br> "giorno"|Permette all'utente di prenotare il tavolo
 POST|/prenotaMenu|"antipasto" <br> "primo" <br> "secondo" <br> "dolce"|Permette all'utente di prenotare il Menù
-POST|/ristorante|"posto" <br> "nome"|Mostra tutte le informazioni relative al ristorante
+GET|/ristorante| |Mostra tutte le informazioni relative al ristorante
 POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha effettuato
 ***
 - ## Diagramma dei casi d'uso    
