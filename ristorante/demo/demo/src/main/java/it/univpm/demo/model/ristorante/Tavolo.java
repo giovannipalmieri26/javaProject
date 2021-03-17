@@ -59,7 +59,6 @@ public class Tavolo implements Oggetto {
 		catch(DateTimeException e) {
 		}
 		this.setPrevisioni();
-		System.out.println(this.previsione.getPrincipale());
 	}
 	
 	/**
