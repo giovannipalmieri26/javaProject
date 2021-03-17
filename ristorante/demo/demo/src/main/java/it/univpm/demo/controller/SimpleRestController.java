@@ -207,7 +207,7 @@ public class SimpleRestController {
 			if(user == nome) {
 				this.antipasto = api.valorizzaPiatto(antipasto);
 				if((this.antipasto.getNome() == null) && (this.antipasto.getPrezzo() == 0.0)) throw new EccezioneMenu();
-				if(this.antipasto != null) {
+				if(this.antipasto.getNome() != "-") {
 					if(this.antipasto.getPrezzo() <= 100) this.antipasto.setPrezzo(this.antipasto.getPrezzo()/10);
 					else this.antipasto.setPrezzo(this.antipasto.getPrezzo()/100 + 5);
 			}
