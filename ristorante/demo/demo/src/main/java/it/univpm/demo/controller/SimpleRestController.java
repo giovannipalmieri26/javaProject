@@ -84,7 +84,8 @@ public class SimpleRestController {
 	}
 	
 	/**
-	 * Permette di visualizzare la lista degli account
+	 * Questa rotta è consentita solo al proprietario del ristorante e permette di visualizzare la lista degli account.
+	 * Per accedervi è infatti necessaria la seguente chiave di accesso: Info2021
 	 * @param chiave di accesso
 	 * @return Database con la lista degli Account
 	 */
@@ -188,7 +189,8 @@ public class SimpleRestController {
 	}
 	
 	/**
-	 * Permette all'utente di prenotare il Menu
+	 * Permette all'utente di prenotare il Menu inserendo i cibi desiderati. Se si vuole inserire un cibo in cui è presente la spaziatura, 
+	 * ad esempio "
 	 * @param antipasto che si desidera ordinare
 	 * @param primo che si desidera ordinare
 	 * @param secondo che si desidera ordinare
@@ -239,7 +241,8 @@ public class SimpleRestController {
 	}
 
 	/**
-	 * Restituisce un JSONObject con tutte le informazioni relative al ristorante
+	 * Questa rotta è consentita solo al proprietario del ristorante e  restituisce un JSONObject con tutte le informazioni relative al ristorante.
+	 * Per accedervi è infatti necessaria la seguente chiave di accesso: Info2021
 	 * @param  chiave di accesso
 	 * @return Ristorante contenente tutte le informazioni relative al ristorante
 	 */
