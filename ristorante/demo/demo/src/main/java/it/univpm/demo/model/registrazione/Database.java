@@ -35,8 +35,7 @@ public class Database {
 }
 	
 	/**
-	 * Consente di registrare un account ed aggiungerlo alla lista degli account 
-	 * se lo username non è già stato utilizzato da un altro utente
+	 * Consente di registrare un account ed aggiungerlo alla lista degli account se lo username non è già stato utilizzato da un altro utente
 	 * @param username String con lo username dell'account che si vuole registrare
 	 * @param password String  con la password dell'account che si vuole registrare
 	 * @return boolean true se l'account viene creato con successo, altrimenti false
@@ -53,6 +52,7 @@ public class Database {
 	
 	/**
 	 *Genera la lista degli account sottoforma di Stringa
+	 * @return String lista degli account sottoforma di stringa
 	 */
 	public String toString() {
 		String ritorno = "";
@@ -98,9 +98,9 @@ public class Database {
 	
 	/**
 	 * Metodo che permettere di inserire un account alla lista
-	 * @param account account da aggiungere alla lista
+	 * @param account da aggiungere alla lista
 	 */
-	public void	aggiungiAccount(Account account) {
+	public void aggiungiAccount(Account account) {
 		this.lista.add(account);
 	}
 }
