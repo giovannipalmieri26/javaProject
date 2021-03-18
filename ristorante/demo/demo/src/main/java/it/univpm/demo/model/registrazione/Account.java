@@ -23,8 +23,8 @@ public class Account  {
 	
 	/**
 	 * Controlla la password
-	 * @param password stringa da verificare
-	 * @return true se cè uguale, altrimenti false
+	 * @param password da verificare
+	 * @return true se è uguale, altrimenti false
 	 */
 	public boolean controllaPassword (String password) {
 		if(password.equalsIgnoreCase(this.password)) return true;
@@ -33,9 +33,9 @@ public class Account  {
 	
 	/**
 	 * Permette di resettare la password
-	 * @param vecchiaPassword password per la verifica
-	 * @param nuovaPassword nuova password
-	 * @return se la password è stata modificata true, altrimenti false
+	 * @param vecchiaPassword per la verifica
+	 * @param nuovaPassword nuova password da inserire
+	 * @return se la password è stata modificata restituisce true, altrimenti false
 	 */
 	public boolean modificaPass(String vecchiaPassword, String nuovaPassword) {
 		if (this.controllaPassword(vecchiaPassword)) {
@@ -46,10 +46,10 @@ public class Account  {
 		}
 	
 	/**
-	 * Cambia l'username
-	 * @param password password dell'account
-	 * @param nuovoUsername nuovo username
-	 * @return true se l' username è stato modificato, altrimenti false
+	 * Cambia lo username
+	 * @param password dell'account
+	 * @param nuovoUsername nuovo username da inserire
+	 * @return true se lo username è stato modificato, altrimenti false
 	 */
 	public boolean modificaUsername(String password, String nuovoUsername) {
 		if (this.controllaPassword(password)) {
@@ -60,20 +60,23 @@ public class Account  {
 		}
 	
 	/**
-	 * @return ritorna lo username
+	 * Restituisce lo username
+	 * @return String con lo username
 	 */
 	public String getUsername() {
 		return this.username;
 		}
 	
 	/**
-	 * @return ritorna la password
+	 * Restituisce la password
+	 * @return String con la password
 	 */
 	public String getPassword() {
 		return this.password;
 		}
 	
-	/**
+	/** 
+	 * Restituisce il toString dello username
 	 *@return ritorna in stringa la classe 
 	 */
 	public String toString() {
