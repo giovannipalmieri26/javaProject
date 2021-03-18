@@ -13,12 +13,12 @@ import it.univpm.demo.model.ristorante.Piatto;
 public class Prenotazioni{
 	
 	/**
-	 * Nome di chi prenota
+	 * Numero della prenotazione
 	 */
 	public int numero = 0; 
 	
 	/**
-	 * Nome di chi prenota
+	 * Nome di chi effettua la prenotazione
 	 */
 	public String nome;
 	
@@ -47,7 +47,7 @@ public class Prenotazioni{
 	private Piatto dolce;
 	
 	/**
-	 * Stato della prenotazione
+	 * Boolean relativo allo stato della prenotazione: true se il tavolo è stato prenotato all'esterno, false se è stato prenotato all'interno 
 	 */
 	private boolean ordine;
 	
@@ -65,7 +65,7 @@ public class Prenotazioni{
 	 * @param primo che si desidera ordinare
 	 * @param secondo che si desidera ordinare
 	 * @param dolce che si desidera ordinare
-	 * @param ordine true se la prenotazione è stata effettuata all'esterno altrimenti false
+	 * @param ordine true se la prenotazione del tavolo è stata effettuata all'esterno altrimenti false
 	 */
 	public Prenotazioni (String nome, Piatto antipasto, Piatto primo, Piatto secondo, Piatto dolce, boolean ordine) {
 		this.nome = nome;
@@ -88,6 +88,9 @@ public class Prenotazioni{
 				+ "\n" + "DOLCE: " + getDolce().toString());
 	}
 	
+	/**
+	 *Genera una stringa a partire dalla prenotazione che non contiene il costo dei singoli piatti ordinati
+	 */
 	public String toString2() {
 		return ("L'ordine di " + this.nome + " è il seguente:\n\n" + 
 				"ANTIPASTO:	" + getAntipasto().getNome() + "\n" + "PRIMO: " + getPrimo().getNome() + "\n"
@@ -95,27 +98,31 @@ public class Prenotazioni{
 	}
 
 	/**
-	 * @return the antipasto
+	 * Restituisce l'antipasto ordinato
+	 * @return antipasto
 	 */
 	public Piatto getAntipasto() {
 		return antipasto;
 	}
 
 	/**
-	 * @param antipasto the antipasto to set
+	 * Setta l'antipasto ordinato
+	 * @param antipasto da settare
 	 */
 	public void setAntipasto(Piatto antipasto) {
 		this.antipasto = antipasto;
 	}
 
 	/**
-	 * @return the primo
+	 * Restituisce il primo ordinato
+	 * @return primo
 	 */
 	public Piatto getPrimo() {
 		return primo;
 	}
 
 	/**
+	 * Setta il primo ordinato
 	 * @param primo the primo to set
 	 */
 	public void setPrimo(Piatto primo) {
@@ -123,6 +130,7 @@ public class Prenotazioni{
 	}
 
 	/**
+	 * Restituisce il secondo ordinato
 	 * @return the secondo
 	 */
 	public Piatto getSecondo() {
@@ -130,6 +138,7 @@ public class Prenotazioni{
 	}
 
 	/**
+	 * Setta il secondo ordinato
 	 * @param secondo the secondo to set
 	 */
 	public void setSecondo(Piatto secondo) {
@@ -137,6 +146,7 @@ public class Prenotazioni{
 	}
 
 	/**
+	 * Restituisce il dolce ordinato
 	 * @return the dolce
 	 */
 	public Piatto getDolce() {
@@ -144,6 +154,7 @@ public class Prenotazioni{
 	}
 
 	/**
+	 * Setta il dolce ordinato
 	 * @param dolce che si desidera ordinare
 	 */
 	public void setDolce(Piatto dolce) {
@@ -151,6 +162,7 @@ public class Prenotazioni{
 	}
 
 	/**
+	 * Restituisce il conto della prenotazione
 	 * @return conto della prenotazione effettuata
 	 */
 	public double getConto() {
@@ -160,6 +172,7 @@ public class Prenotazioni{
 	}
 
 	/**
+	 * Restituisce lo stato dell'ordine
 	 * @return ordine
 	 */
 	public boolean getOrdine() {
@@ -167,6 +180,7 @@ public class Prenotazioni{
 	}
 
 	/**
+	 * Setta lo stato dell'ordine
 	 * @param ordine da settare
 	 */
 	public void setOrdine(boolean ordine) {
