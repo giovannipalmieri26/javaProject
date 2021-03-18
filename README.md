@@ -44,7 +44,6 @@ POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha e
   
 - ## Diagramma delle sequenze
 - > Diagramma delle sequenze utile a definire il funzionamento delle chiamate web utilizzate tramite Postman
-  - ### Cliente
   <div align="center"><img src="https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagramma%20delle%20sequenze.jpg" width="600" height="400" ></div>
 
 ***
