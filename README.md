@@ -21,8 +21,9 @@ GET|/ristorante|"chiave"|Mostra tutte le informazioni relative al ristorante (ac
 POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha effettuato
 ***
 - ## Diagramma dei casi d'uso   
+> Casi d'uso utilizzati per la modellazione del progetto
+  <div align="center"><img src="https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagramma%20casi%20d'uso.jpg" width="500" height="500" ></div>
 
-https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagramma%20casi%20d'uso.jpg
 - ## Diagramma delle classi
 
     Package|Classi
@@ -39,9 +40,7 @@ https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagr
     ristorante|Piatto; Ristorante; Statistiche; Tavolo;
   
 - ## Diagramma delle sequenze
-> Casi d'uso utilizzati per la modellazione del progetto
-  <div align="center"><img src="https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagramma%20casi%20d'uso.jpg" width="500" height="500" ></div>
-     
+
 ***
 ## Eccezioni
 + EccezioneData
