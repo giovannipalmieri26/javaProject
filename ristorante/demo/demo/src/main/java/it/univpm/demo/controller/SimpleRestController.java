@@ -54,7 +54,7 @@ public class SimpleRestController {
 	}
 	
 	/**
-	 * Permette ad un utente di creare un account
+	 * Permette ad un utente di creare un account inserendo gli appositi parametri
 	 * @param username username per l'account
 	 * @param password password dell'account
 	 * @return String con esito della creazione
@@ -96,7 +96,7 @@ public class SimpleRestController {
 	}
 	
 	/**
-	 * Permette di visualizzare la lista delle prenotazioni 
+	 * Permette di visualizzare la lista delle prenotazioni con la possibilità di filtrare i risultati
 	 * @param nome di chi prenota
 	 * @param stato inserire "esterno" se si vuole visualizzare le prenotazioni effettuate all'aperto, 
 	 * inserire "interno" se si vuole visualizzare le prenotazioni all'interno
@@ -141,7 +141,7 @@ public class SimpleRestController {
 	}
 
 	/**
-	 * Permette di vedere le previsioni per i prossimi giorni
+	 * Permette di vedere le previsioni per i prossimi giorni con la possibilitò di filtrare i risultati
 	 * @param giorni di cui si vuole controllare le previsioni
 	 * @return String con la lista delle previsioni desiderate
 	 */
@@ -157,12 +157,11 @@ public class SimpleRestController {
 		
 	
 	/**
-	 * Consente al cliente di prenotare un tavolo
-	 * Può generare un'eccezione se la data non esiste
-	 * @param anno Anno in cui si svolge 
-	 * @param mese Mese in cui si svolge 
-	 * @param giorno Giorno in cui si svolge 
-	 * @return String con esito della creazione
+	 * Consente al cliente di prenotare un tavolo e può generare un'eccezione se la data non esiste
+	 * @param anno Anno della prenotazione
+	 * @param mese Mese della prenotazione 
+	 * @param giorno Giorno della prenotazione
+	 * @return String con l'esito della prenotazione
 	 * @throws DateTimeException eccezione per l'inserimento errato di date
 	 * @throws EccezioneData eccezione per l'inserimento errato di date
 	 */
@@ -248,7 +247,8 @@ public class SimpleRestController {
 	}
 
 	/**
-	 * Questa rotta è consentita solo al proprietario del ristorante e  restituisce un JSONObject con tutte le informazioni relative al ristorante.
+	 * Questa rotta è consentita solo al proprietario del ristorante e  restituisce un JSONObject con tutte le informazioni relative al ristorante
+	 * e le varie statistche.
 	 * Per accedervi è infatti necessaria la seguente chiave di accesso: Info2021
 	 * @param  chiave di accesso
 	 * @return Ristorante contenente tutte le informazioni relative al ristorante
@@ -267,7 +267,8 @@ public class SimpleRestController {
 	}
 	
 	/**
-	 * Permette ad un utente di eliminare una prenotazione che ha effettuato
+	 * Permette ad un utente di eliminare una prenotazione che ha effettuato inserendo il rispettivo numero 
+	 * associato alla prenotazione, visibile sulla lista delle prenotazioni;
 	 * @param numero numero della prenotazione
 	 * @return Strin con esito dell'eliminazione
 	 */
