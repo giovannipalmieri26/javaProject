@@ -19,7 +19,7 @@ public class Lista<T> {
 	
 	/**
 	 * 
-	 * @param oggetto oggetto da inserire nel vector
+	 * @param oggetto da inserire nel vector
 	 */
 	public void aggiungi(T oggetto) {
 		this.lista.add(oggetto);
@@ -35,7 +35,7 @@ public class Lista<T> {
 	}
 	
 	/**
-	 * Elimina l'oggetto della lista in una posizione
+	 * Elimina l'oggetto della lista in una determinata posizione passata come parametro
 	 * @param posizione posizione dell'oggetto da eliminare
 	 */
 	public void elimina(int posizione) {
