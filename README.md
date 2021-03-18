@@ -20,7 +20,9 @@ POST|/prenotaMenu|"antipasto" <br> "primo" <br> "secondo" <br> "dolce"|Permette 
 GET|/ristorante|"chiave"|Mostra tutte le informazioni relative al ristorante (accessibile solo al proprietario del ristorante)
 POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha effettuato
 ***
-- ## Diagramma dei casi d'uso    
+- ## Diagramma dei casi d'uso   
+
+https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagramma%20casi%20d'uso.jpg
 - ## Diagramma delle classi
 
     Package|Classi
