@@ -39,6 +39,9 @@ https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagr
     ristorante|Piatto; Ristorante; Statistiche; Tavolo;
   
 - ## Diagramma delle sequenze
+> Casi d'uso utilizzati per la modellazione del progetto
+  <div align="center"><img src="https://raw.githubusercontent.com/Luca-Marcianesi/Progetto-chalet/master/img/Cliente.jpg" width="500" height="500" ></div>
+     
 ***
 ## Eccezioni
 + EccezioneData
