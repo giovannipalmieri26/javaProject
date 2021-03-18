@@ -2,10 +2,17 @@ package it.univpm.demo.model.liste;
 
 import it.univpm.demo.model.prenotazioni.Prenotazioni;
 
+/**
+ * @author Giovanni
+ * @author Giorgio
+ * @author Mattia
+ * 
+ *Classe utilizzata per la creazione di una lista di prenotazioni
+ */
 public class ListaPrenotazioni<T extends Prenotazioni> extends Lista<T> {
 	
 	/*
-	 *Restituisce la stringa ch contiene la lista delle prenotazioni 
+	 *Restituisce la stringa che contiene la lista delle prenotazioni 
 	 * @return String della lista delle prenotazioni
 	 */
 	public String toString() {
@@ -16,7 +23,7 @@ public class ListaPrenotazioni<T extends Prenotazioni> extends Lista<T> {
 	}
 	
 	/**
-	 *Genera una lista di prenotazioni a partire da un'altra lista
+	 *Popola una lista di prenotazioni passata come parametro
 	 *@param appoggio listaPrenotazioni da inserire in input
 	 *@return ListaPrenotazioni lista di prenotazioni
 	 */
