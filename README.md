@@ -28,19 +28,19 @@ POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha e
 > Uso delle classi utilizzato per l'impostazione del progetto 
 
   <div align="center"><img src="https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Uso%20delle%20classi.jpg" width="600" height="400" ></div>
-
-    Package|Classi
-    -------|------
-    api|UtilizzoApi;
-    controller|SimpleRestController;
-    interfacce|Oggetto;
-    demo|DemoApplication;
-    eccezioni|EccezioneData; EccezioneMenu;
-    liste|Lista; ListaPrenotazione;
-    luogo|Previsioni; 
-    prenotazioni|Prenotazioni;
-    registrazione|Account; Database;
-    ristorante|Piatto; Ristorante; Statistiche; Tavolo;
+  
+   Package|Classi
+   -------|------
+   api|UtilizzoApi;
+   controller|SimpleRestController;
+   interfacce|Oggetto;
+   demo|DemoApplication;
+   eccezioni|EccezioneData; EccezioneMenu;
+   liste|Lista; ListaPrenotazione;
+   luogo|Previsioni; 
+   prenotazioni|Prenotazioni;
+   registrazione|Account; Database;
+   ristorante|Piatto; Ristorante; Statistiche; Tavolo;
   
 - ## Diagramma delle sequenze
 - > Diagramma delle sequenze utile a definire il funzionamento delle chiamate web utilizzate tramite Postman
