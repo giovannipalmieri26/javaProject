@@ -14,7 +14,7 @@ import it.univpm.demo.model.api.UtilizzoApi;
  * @author Giorgio 
  * @author Mattia
  * 
- *Classe che contiene le informazioni della prenotazione di un tavolo
+ *Classe che contiene le informazioni di un tavolo
  */
 
 public class Tavolo implements Oggetto {
@@ -25,17 +25,17 @@ public class Tavolo implements Oggetto {
 	private LocalDate data;
 	
 	/**
-	 * String che contiene il nome del cliente
+	 * String che contiene il nome del cliente che ha effettuato la prenotazione del tavolo
 	 */
 	private String nome;
 
 	/**
-	 * Oggetto che contiene le previsioni meteo per quella giornata
+	 * Oggetto che contiene le previsioni meteo per la giornata in cui il tavolo è stato prenotato
 	 */
 	private Previsioni previsione;
 	
 	/**
-	 * Vector che contiene  le prenotazioni 
+	 * Vector che contiene le prenotazioni effetuate
 	 */
 	private Vector<String> listaPrenotazioni= new Vector <String>();
 
@@ -44,13 +44,16 @@ public class Tavolo implements Oggetto {
 	 */
 	private Prenotazioni prenotazione;
 
+	/*
+	 * Stato della prenotazione del tavolo: true ovvero tavolo prenotato all'esterno se le condizioni meteo lo permettono, altrimenti false
+	 */
 	private boolean stato;
 
 	/**
 	 * Costruttore della classe Tavolo
-	 * @param anno anno della prenotazione del tavolo
-	 * @param mese  mese della prenotazione del tavolo
-	 * @param giorno giorno della prenotazione del tavolo
+	 * @param anno della prenotazione del tavolo
+	 * @param mese della prenotazione del tavolo
+	 * @param giorno della prenotazione del tavolo
 	 */
 	public Tavolo (int anno, int mese, int giorno) {
 		try {
@@ -62,21 +65,24 @@ public class Tavolo implements Oggetto {
 	}
 	
 	/**
-	 * @return ritorna la data dell'evento
+	 * Restituisce la data della prenotazione del tavolo
+	 * @return ritorna la data della prenotazione del tavolo
 	 */
 	public LocalDate getData() {
 		return this.data;
 	}	
 	
 	/**
-	 * @param nome attribuisce il nome del tavolo
+	 * Setta il nome di chi ha effettuato la prenotazione del tavolo
+	 * @param nome di chi ha effettuato la prenotazione del tavolo
 	 */
 	public void setTipo(String nome) {
 		this.nome = nome;
 	}
 	
 	/**
-	 * @return ritorna la stringa con il nome del tavolo
+	 * Restituisce la stringa contenente di chi ha effettuato la prenotazione del tavolo
+	 * @return ritorna la stringa con il nome di chi ha effettuato la prenotazione del tavolo
 	 */
 	public String getTipo() {
 		 return this.nome; 
@@ -84,7 +90,7 @@ public class Tavolo implements Oggetto {
 	
 	/**
 	 * Effettua un controllo sulle condizioni meteo
-	 *@return ritorna true ovvero tavolo disponibile all'esterno se le condizioni meteo lo permettono
+	 *@return ritorna true ovvero tavolo prenotato all'esterno se le condizioni meteo lo permettono altrimenti false
 	 */
 	public boolean getStato() {
 		if(this.previsione.getCondizioni()) {
@@ -96,14 +102,16 @@ public class Tavolo implements Oggetto {
 	}
 	
 	/**
-	 * @return ritorna il vector che contiene le prenotazioni
+	 * Restituisce il vettore di strighe delle prenotazioni del tavolo effettuate
+	 * @return Vector contenente le prenotazioni del tavolo effettuate
 	 */
 	public Vector<String> getListaPrenotazioni(){
 		return this.listaPrenotazioni;
 	}
 	
 	/**
-	 *Aggiunge una prenotazione prendendo come parametro il nome
+	 * Consente di aggiungere una prenotazione del tavolo a partire dal nome passato come parametro
+	 * @param nome della prenotazione del tavolo che si vuole aggiungere
 	 */
 	public void aggiungiPrenotazione(String nome) {
 		this.nome = nome;
@@ -112,13 +120,15 @@ public class Tavolo implements Oggetto {
 	
 	/**
 	 *Trasforma il tavolo in string
+	 * @return String della prenotazione del tavolo
 	 */
 	public String toString () {
 		return("Prenotazione effettuata con successo per il:\t" + this.data + "\n");
 	}
 	
 	/**
-	 * @return ritorna l'oggetto che contiene le previsioni meteo relative alla prenotazione effettuata
+	 * Restituisce la previsione relativa alla prenotazione del tavolo effettuata
+	 * @return ritorna l'oggetto che contiene la previsione meteo relativa alla prenotazione del tavolo effettuata
 	 */
 	public Previsioni getPrevisione() {
 		return this.previsione;
@@ -139,6 +149,7 @@ public class Tavolo implements Oggetto {
 	}
 
 	/**
+	 * Imposta lo stato del tavolo
 	 * @param stato del tavolo
 	 */
 	public void setStato(boolean stato) {
@@ -147,13 +158,15 @@ public class Tavolo implements Oggetto {
 	}
 
 	/**
-	 * @return prenotazione
+	 * Restituisce la prenotazione del tavolo effettuata
+	 * @return prenotazione del tavolo effettuata
 	 */
 	public Prenotazioni getPrenotazione() {
 		return prenotazione;
 	}
 
 	/**
+	 * Setta la prenotazione del tavolo
 	 * @param prenotazione da settare
 	 */
 	public void setPrenotazione(Prenotazioni prenotazione) {
