@@ -58,6 +58,9 @@ public class UtilizzoApi {
 	 */
 	public int scansioniTotali = this.scansioniGiornaliere;	
 	
+	/**
+	 * Variabile di tipo piatto utilizzata successivamente
+	 */
 	public Piatto piattoInesistente;
 
 	/**
@@ -106,7 +109,7 @@ public class UtilizzoApi {
 	}	
 	
 	/**
-	 * Valorizza una lista aggiungendo le previsioni che si desiderano
+	 * Valorizza una lista aggiungendo le previsioni che si desiderano e che andranno poi a popolare le informazioni del Ristorante
 	 * @return Lista previsioni 
 	 */
 	public Lista<Previsioni> valorizzaPrevisioniRistorante() {
