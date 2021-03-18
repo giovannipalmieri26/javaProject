@@ -22,38 +22,42 @@ public class Piatto {
 	
 	
 	/**
-	 * Costruttore della classe che genera l'oggetto partendo dalla descrizione e dal prezzo
-	 * @param nome nome del piatto
-	 * @param costo prezzo del piatto
+	 * Costruttore della classe che genera il piatto partendo dal nome e dal prezzo
+	 * @param nome del piatto
+	 * @param prezzo del piatto
 	 */
-	public  Piatto(String nome , double costo) {
+	public  Piatto(String nome , double prezzo) {
 		this.nome = nome;
-		this.prezzo = (float) costo;
+		this.prezzo = (float) prezzo;
 	}
 	
 	/**
-	 *@return float ritorna il prezzo del piatto
+	 * Restituisce il prezzo del piatto
+	 *@return float prezzo del piatto
 	 */
 	public double getPrezzo() {
 		return (int) this.prezzo;
 	}
 	
 	/**
-	 *@param prezzo setta il prezzo del piatto
+	 * Setta il prezo del piatto
+	 *@param prezzo del piatto che si vuole settare
 	 */
 	public void setPrezzo(double prezzo) {
 		this.prezzo = prezzo;
 	}
 	
 	/**
-	 * @return string ritorna il nome del piatto
+	 * Restituisce il nome del piatto
+	 * @return String contenente il nome del piatto
 	 */
 	public String getNome() {
 		return this.nome;
 	}
 	
 	/**
-	 *Trasforma il piatto in una stringa
+	 * Restituisce il piatto sottoforma di stringa
+	 * @String del piatto
 	 */
 	public String toString() {
 		if(this.nome == "-") return (this.nome);
