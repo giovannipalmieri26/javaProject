@@ -67,7 +67,7 @@ POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha e
 Nome|Url|Descrizione
 ----|--|----
 openweathermap|http://api.openweathermap.org/data/2.5/forecast?q=Ancona&appid=1954a4f8ba28a99259fbfcc0e65df65c|Utilizzato per l'acquisizione del meteo in tempo reale
-edamam food|https://api.edamam.com/api/food-database/v2/parser?app_key=9ba5db401b1521a8361aece88787a139&app_id=1f1731cf&ingr=|Utilizzato per i cibi da usare nel menù
+edamam food|https://api.edamam.com/api/food-database/v2/parser?app_key=9ba5db401b1521a8361aece88787a139&app_id=1f1731cf&ingr=|Utilizzato per i cibi che si possono ordinare
 
 ***
 ## Tool e Librerie da istallare:
