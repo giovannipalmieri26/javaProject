@@ -210,30 +210,30 @@ public class SimpleRestController {
 				if(this.antipasto.getNome() != "-") {
 					if(this.antipasto.getPrezzo() <= 100) this.antipasto.setPrezzo(this.antipasto.getPrezzo()/10);
 					else this.antipasto.setPrezzo(this.antipasto.getPrezzo()/100 + 5);
-			}
-			this.primo = api.valorizzaPiatto(primo);
-			if((this.primo.getNome() == null) && (this.primo.getPrezzo() == 0.0)) throw new EccezioneMenu();
-			if(this.primo.getNome() != "-") {
-				if(this.primo.getPrezzo()/100 <= 1) this.primo.setPrezzo(this.primo.getPrezzo()/100 + 7);
-				else this.primo.setPrezzo(this.primo.getPrezzo()/100 + 5);
-			}
-			this.secondo = api.valorizzaPiatto(secondo);
-			if((this.secondo.getNome() == null) && (this.secondo.getPrezzo() == 0.0)) throw new EccezioneMenu();
-			if(this.secondo.getNome() != "-") {
-				if(this.secondo.getPrezzo()/100 <= 1) this.secondo.setPrezzo(this.secondo.getPrezzo()/100 + 7);
-				else this.secondo.setPrezzo(this.secondo.getPrezzo()/100 + 5);
-			}
-			this.dolce = api.valorizzaPiatto(dolce);
-			if((this.dolce.getNome() == null) && (this.dolce.getPrezzo() == 0.0)) throw new EccezioneMenu();
-			if(this.dolce.getNome() != "-"){
-				if(this.dolce.getPrezzo() <= 100) this.dolce.setPrezzo(this.dolce.getPrezzo()/10);
-				else this.dolce.setPrezzo(this.dolce.getPrezzo()/100 + 5);
-			} 
-			Prenotazioni prenotazione = new Prenotazioni(user, this.antipasto, this.primo, this.secondo, this.dolce, ordine);
-			prenotazione.numero = ristorante.getListaPrenotazioni().getLista().size();
-			ristorante.getListaPrenotazioni().aggiungi(prenotazione);
-			ristorante.setContoMedio(ristorante.getListaPrenotazioni());
-			return("Prenotazione effettuata! ");
+				}
+				this.primo = api.valorizzaPiatto(primo);
+				if((this.primo.getNome() == null) && (this.primo.getPrezzo() == 0.0)) throw new EccezioneMenu();
+				if(this.primo.getNome() != "-") {
+					if(this.primo.getPrezzo()/100 <= 1) this.primo.setPrezzo(this.primo.getPrezzo()/100 + 7);
+					else this.primo.setPrezzo(this.primo.getPrezzo()/100 + 5);
+				}
+				this.secondo = api.valorizzaPiatto(secondo);
+				if((this.secondo.getNome() == null) && (this.secondo.getPrezzo() == 0.0)) throw new EccezioneMenu();
+				if(this.secondo.getNome() != "-") {
+					if(this.secondo.getPrezzo()/100 <= 1) this.secondo.setPrezzo(this.secondo.getPrezzo()/100 + 7);
+					else this.secondo.setPrezzo(this.secondo.getPrezzo()/100 + 5);
+				}
+				this.dolce = api.valorizzaPiatto(dolce);
+				if((this.dolce.getNome() == null) && (this.dolce.getPrezzo() == 0.0)) throw new EccezioneMenu();
+				if(this.dolce.getNome() != "-"){
+					if(this.dolce.getPrezzo() <= 100) this.dolce.setPrezzo(this.dolce.getPrezzo()/10);
+					else this.dolce.setPrezzo(this.dolce.getPrezzo()/100 + 5);
+				} 
+				Prenotazioni prenotazione = new Prenotazioni(user, this.antipasto, this.primo, this.secondo, this.dolce, ordine);
+				prenotazione.numero = ristorante.getListaPrenotazioni().getLista().size();
+				ristorante.getListaPrenotazioni().aggiungi(prenotazione);
+				ristorante.setContoMedio(ristorante.getListaPrenotazioni());
+				return("Prenotazione effettuata! ");
 			}
 			return("Prima occorre prenotare il tavolo!");
 		}
