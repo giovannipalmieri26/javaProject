@@ -77,7 +77,7 @@ public class Account  {
 	
 	/** 
 	 * Restituisce il toString dello username
-	 *@return ritorna in stringa la classe 
+	 * @return ritorna in stringa la classe 
 	 */
 	public String toString() {
 		return(	 "User: " + username + "\n");
