@@ -8,7 +8,7 @@ import java.time.Instant;
  * @author Giovanni
  * @author Giorgio
  * @author Mattia
- * Classe che consente di gestire le condizioni meteorologiche relative al giorno desiderato
+ * Classe che consente di gestire le previsioni meteorologiche 
  *
  */
 public class Previsioni {
@@ -24,12 +24,12 @@ public class Previsioni {
 		private LocalDate data;
 		 
 		 /**
-		 * String previsioni della città inserita
+		 * Stringa contenente le previsioni della città di cui si vuole visionare le previsioni
 		 */
 		private String principale;
 		 
 		 /**
-		 * double temperatura della città in kelvin
+		 * double temperatura della città 
 		 */
 		protected double temperatura;
 		 
@@ -50,7 +50,7 @@ public class Previsioni {
 		 
 		 /**
 		  * Imposta la temperatura
-		 * @param temperatura temperatura da inserire
+		 * @param temperatura da inserire
 		 */
 		public void setTemperatura (double temperatura) {
 			this.temperatura = (int) (temperatura - 273);
@@ -72,14 +72,14 @@ public class Previsioni {
 		 
 		 /**
 		  * Imposta il nome della città 
-		 * @param nome il nome da inserire
+		 * @param nome della città che si vuole inserire
 		 */
 		public void setNome ( String nome ) {
 			 this.nome = nome;
 		 } 
 		 
 		 /**
-		  * Imposta la data della previsione metereologica che si vuole visionare
+		  * Imposta la data relativa alla previsione metereologica che si vuole visionare
 		  * Converte il long in una data
 		 * @param ora long della data in UnixEpoch
 		 */
@@ -118,7 +118,7 @@ public class Previsioni {
 		/**
 		* Ritorna un bool che rappresenta le previsioni: true se è bel tempo, false se
 		* le previsioni non sono disponibili o è brutto tempo
-		* @return true(Non piove) false (brutto tempo o le previsioni non sono disponibili)
+		* @return true se non piove, false se è brutto tempo o le previsioni non sono disponibili
 		*/
 		public boolean getCondizioni() {
 			switch (this.principale) {
