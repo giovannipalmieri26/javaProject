@@ -11,7 +11,7 @@ import it.univpm.demo.model.api.*;
  * @author Mattia
  * @author Giorgio
  * 
- *Classe che gestisce le statistche del ristorante
+ *Classe che gestisce le statistiche delle previsioni
  */
 public  class Statistiche extends Lista<Previsioni> {
 
@@ -40,7 +40,7 @@ public  class Statistiche extends Lista<Previsioni> {
 	}
 	/**
 	 * Genera la somma dei valori degli oggetti presenti in lista
-	 * @return somma
+	 * @return somma dei valori degli oggetti presenti in lista
 	 */
 	public float somma() {
 		float totale = 0;
@@ -50,35 +50,38 @@ public  class Statistiche extends Lista<Previsioni> {
 	
 	/**
 	 * Genera la media dei valori degli oggetti presenti in lista
-	 *@return media 
+	 *@return media dei valori degli oggetti presenti in lista
 	 */
 	public float media() {	
 		return this.somma() / super.getLista().size();	
 	}
 	
 	/**
-	 * @return restituisce la stringa della media
+	 * Restituisce la media 
+	 * @return String della media
 	 */
 	public String getMedia() {
 		return (this.media() + "");
 	}
 	
 	/**
-	 * @return restituisce la previsione di oggi
+	 * Restituisce una previsione
+	 * @return Previsione 
 	 */
 	public Previsioni getPrevisione() {
 		return this.previsione;
 	}
 	
 	/**
-	 * @return retituisce la temperatura media
+	 * Restituisce la temperatura media
+	 * @return float che rappresenta la temperatura media
 	 */
 	public float getTemperaturaMedia() {
 		return this.temperaturaMedia;
 	}
 	
 	/**
-	 * setta la listaPrevisioni
+	 * Setta la listaPrevisioni
 	 * @param listaPrevisioni lista delle previsioni
 	 */
 	public void setListaPrevisioni(Lista<Previsioni> listaPrevisioni) {
