@@ -40,7 +40,7 @@ https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagr
   
 - ## Diagramma delle sequenze
 > Casi d'uso utilizzati per la modellazione del progetto
-  <div align="center"><img src="https://raw.githubusercontent.com/Luca-Marcianesi/Progetto-chalet/master/img/Cliente.jpg" width="500" height="500" ></div>
+  <div align="center"><img src="https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagramma%20casi%20d'uso.jpg" width="500" height="500" ></div>
      
 ***
 ## Eccezioni
