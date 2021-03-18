@@ -30,7 +30,7 @@ public class Ristorante {
 	private double contoMedio = 0;
 	
 	/**
-	 * Lista delle informazioni
+	 * Lista delle previsioni con le relative statistiche
 	 */
 	public Lista<Previsioni> listaStats = new Statistiche();
 	
@@ -77,14 +77,16 @@ public class Ristorante {
 	}
 
 	/**
-	 * @return contoMedio
+	 * Restituisce il conto medio
+	 * @return double che rappresenta il conto medio
 	 */
 	public double getContoMedio() {
 		return this.contoMedio;
 	}
 
 	/**
-	 * @param listaPrenotazioni da inserire in input
+	 * Setta il conto medio in base alla lista di prenotazioni passata come parametro
+	 * @param listaPrenotazioni in base alla quale si setta il conto medio 
 	 */
 	public void setContoMedio(ListaPrenotazioni<Prenotazioni> listaPrenotazioni) {
 		double somma = 0;
