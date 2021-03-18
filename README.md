@@ -25,6 +25,9 @@ POST|/elimina|"numero"|Permette all'utente di eliminare la prenotazioni che ha e
   <div align="center"><img src="https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Diagramma%20casi%20d'uso.jpg" width="500" height="500" ></div>
 
 - ## Diagramma delle classi
+> Uso delle classi utilizzato per l'impostazione del progetto 
+
+  <div align="center"><img src="https://github.com/giovannipalmieri26/javaProject/blob/main/UML%20diagrams/Uso%20delle%20classi.jpg" width="600" height="400" ></div>
 
     Package|Classi
     -------|------
