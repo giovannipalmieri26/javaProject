@@ -19,9 +19,9 @@ public interface Oggetto  {
 	 */
 	public String getTipo();
 	
-
+	
 	/*
-	 * Setta il tipo dell'oggetto
+	 * Aggiunge il nome della prenotazione
 	 */
 	public  void aggiungiPrenotazione(String nome);
 	}
