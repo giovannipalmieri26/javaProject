@@ -189,8 +189,7 @@ public class SimpleRestController {
 	}
 	
 	/**
-	 * Permette all'utente di prenotare il Menu inserendo i cibi desiderati. Se si vuole inserire un cibo in cui è presente la spaziatura, 
-	 * ad esempio "
+	 * Permette all'utente di prenotare il Menu inserendo i cibi desiderati.
 	 * @param antipasto che si desidera ordinare
 	 * @param primo che si desidera ordinare
 	 * @param secondo che si desidera ordinare
@@ -205,24 +204,32 @@ public class SimpleRestController {
 			@RequestParam(name = "dolce", defaultValue = "")String dolce) throws EccezioneMenu {
 		if(this.accesso) {
 			if(user == nome) {
+				String[] arrayAntipasto = antipasto.split(" ");
+				if(arrayAntipasto.length != 1) throw new EccezioneMenu();
 				this.antipasto = api.valorizzaPiatto(antipasto);
 				if((this.antipasto.getNome() == null) && (this.antipasto.getPrezzo() == 0.0)) throw new EccezioneMenu();
 				if(this.antipasto.getNome() != "-") {
 					if(this.antipasto.getPrezzo() <= 100) this.antipasto.setPrezzo(this.antipasto.getPrezzo()/10);
 					else this.antipasto.setPrezzo(this.antipasto.getPrezzo()/100 + 5);
 				}
+				String[] arrayPrimo = primo.split(" ");
+				if(arrayPrimo.length != 1) throw new EccezioneMenu();
 				this.primo = api.valorizzaPiatto(primo);
 				if((this.primo.getNome() == null) && (this.primo.getPrezzo() == 0.0)) throw new EccezioneMenu();
 				if(this.primo.getNome() != "-") {
 					if(this.primo.getPrezzo()/100 <= 1) this.primo.setPrezzo(this.primo.getPrezzo()/100 + 7);
 					else this.primo.setPrezzo(this.primo.getPrezzo()/100 + 5);
 				}
+				String[] arraySecondo = secondo.split(" ");
+				if(arraySecondo.length != 1) throw new EccezioneMenu();
 				this.secondo = api.valorizzaPiatto(secondo);
 				if((this.secondo.getNome() == null) && (this.secondo.getPrezzo() == 0.0)) throw new EccezioneMenu();
 				if(this.secondo.getNome() != "-") {
 					if(this.secondo.getPrezzo()/100 <= 1) this.secondo.setPrezzo(this.secondo.getPrezzo()/100 + 7);
 					else this.secondo.setPrezzo(this.secondo.getPrezzo()/100 + 5);
 				}
+				String[] arrayDolce = dolce.split(" ");
+				if(arrayDolce.length != 1) throw new EccezioneMenu();
 				this.dolce = api.valorizzaPiatto(dolce);
 				if((this.dolce.getNome() == null) && (this.dolce.getPrezzo() == 0.0)) throw new EccezioneMenu();
 				if(this.dolce.getNome() != "-"){
